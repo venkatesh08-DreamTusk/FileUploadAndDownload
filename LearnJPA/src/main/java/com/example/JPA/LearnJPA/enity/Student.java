@@ -9,16 +9,12 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Attachment {
+public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String fileName;
-    private String fileType;
-
-    @Lob
-    @Column(columnDefinition = "LONGBLOB")
-    private byte[] data;
-
+    private String name;
+    private Integer age;
+    private String photo;
 }
